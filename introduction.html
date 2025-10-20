@@ -4,93 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>間久保 桜花 — 自己紹介</title>
-  <style>
-    :root{
-      --bg1:#FFEEF3;
-      --bg2:#FFF7EE;
-      --card:#ffffff;
-      --accent:#FF6FA3;
-      --muted:#6b6b6b;
-      --radius:16px;
-      --glass: rgba(255,255,255,0.6);
-      font-family: Inter, system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
-    }
-    html,body{height:100%;}
-    body{
-      margin:0;
-      background: linear-gradient(135deg,var(--bg1),var(--bg2));
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
-    .container{
-      width:100%;
-      max-width:900px;
-      border-radius:calc(var(--radius)+4px);
-      backdrop-filter: blur(6px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      overflow:hidden;
-      display:grid;
-      grid-template-columns: 280px 1fr;
-      gap:0;
-      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.75));
-    }
-    header{
-      grid-column:1 / -1;
-      padding:28px 32px;
-      display:flex;
-      align-items:center;
-      gap:18px;
-      background:linear-gradient(90deg, rgba(255,111,163,0.08), rgba(255,175,205,0.04));
-      border-bottom:1px solid rgba(0,0,0,0.04);
-    }
-    .avatar{
-      width:84px;height:84px;border-radius:18px;flex:0 0 84px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#FFD1E7);
-      box-shadow:0 6px 16px rgba(255,111,163,0.15);
-    }
-    .avatar svg{width:60px;height:60px;}
-    h1{margin:0;font-size:20px;color:#222}
-    p.lead{margin:2px 0 0 0;color:var(--muted);font-size:13px}
-
-    aside{
-      padding:28px 22px;
-      border-right:1px dashed rgba(0,0,0,0.04);
-      background: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.35));
-    }
-    .meta{display:flex;flex-direction:column;gap:12px}
-    .meta h3{margin:0;font-size:13px;color:var(--muted)}
-    .tag{background:var(--glass);padding:8px 10px;border-radius:10px;font-size:13px;color:#222}
-
-    main{padding:28px 30px}
-    section{margin-bottom:18px}
-    section h2{margin:0 0 10px 0;font-size:16px;color:#222}
-    section p{margin:0;color:var(--muted);line-height:1.6}
-
-    ul.skills{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
-    ul.skills li{padding:8px 12px;border-radius:999px;background:linear-gradient(90deg, rgba(255,111,163,0.08), rgba(255,175,205,0.06));font-size:13px}
-
-    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-    .project{padding:12px;border-radius:12px;background:var(--card);box-shadow:0 6px 14px rgba(15,15,15,0.03);}
-    .project small{display:block;color:var(--muted);margin-bottom:6px}
-
-    footer{padding:18px 30px;border-top:1px solid rgba(0,0,0,0.04);font-size:13px;color:var(--muted);grid-column:1 / -1}
-
-    /* responsive */
-    @media (max-width:720px){
-      .container{grid-template-columns:1fr;}
-      aside{border-right:0;border-bottom:1px dashed rgba(0,0,0,0.04)}
-      .projects{grid-template-columns:1fr}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container" role="region" aria-label="自己紹介カード">
     <header>
       <div class="avatar" aria-hidden="true">
-        <!-- simple cherry-blossom style SVG avatar -->
         <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
           <g transform="translate(4,4)" stroke="rgba(255,255,255,0.9)" stroke-width="0">
             <circle cx="28" cy="28" r="28" fill="#FFDDE7"/>
